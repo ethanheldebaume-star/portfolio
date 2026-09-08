@@ -35,12 +35,3 @@ const revealObserver = new IntersectionObserver(
 );
 
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
-
-document.querySelectorAll('[data-demo="elec"]').forEach(link => {
-  link.addEventListener('click', (event) => {
-    if (link.getAttribute('href') === '#') {
-      event.preventDefault();
-      alert("Ajoute ici l'URL publique de la démo Élec’Pro.");
-    }
-  });
-});
