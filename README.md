@@ -1,31 +1,35 @@
-# Portfolio — Création de sites web
+# APCH Studio — Portfolio
 
-## Fichiers
-- `index.html`
-- `style.css`
-- `script.js`
+Site statique du studio APCH, construit en HTML, CSS et JavaScript natifs.
+
+## Fichiers principaux
+
+- `index.html` — contenu, structure et liens des projets
+- `style.css` — identité APCH, responsive et animations
+- `script.js` — menu mobile, état du header et animations d’apparition
+- `assets/` — logo et illustrations végétales SVG
+
+## Assets APCH
+
+Les illustrations vectorielles sont locales et ne nécessitent aucune dépendance :
+
+- `assets/marguerite.webp`
+- `assets/angelique.webp`
+- `assets/Logo.svg`
+
+Le site utilise maintenant le logo officiel fourni : `assets/Logo.svg`.
+
+Climate Crisis est servie localement depuis `fonts/ClimateCrisis-Regular-VariableFont_YEAR.ttf`, afin que la police de titrage s'affiche aussi une fois le site publié.
 
 ## À modifier avant publication
 
-### 1. Lien Élec’Pro
-Dans `index.html`, cherche :
-```html
-<a href="#" class="project-link" data-demo="elec">
-```
-et remplace `#` par l’URL publique de la démo.
+Remplace `mailto:ton-email@exemple.fr` dans `index.html` par l’adresse e-mail professionnelle du studio.
 
-### 2. Adresse e-mail
-Cherche :
-```html
-mailto:ton-email@exemple.fr
-```
-et mets ton adresse.
+## Démonstrations
 
-### 3. Nom / marque
-Le logo texte affiche actuellement `ETHAN.`. Tu peux le remplacer par ton nom complet ou un nom de studio.
-
-## Lancer en local
-Ouvre simplement `index.html` dans ton navigateur ou utilise Live Server dans VS Code.
+- Élec’Pro : `https://ethanheldebaume-star.github.io/site-demo-electricien/`
+- Atelier Nørd : `https://ethanheldebaume-star.github.io/d-mo-architecte/`
 
 ## Publication GitHub Pages
-Tu peux créer un nouveau dépôt GitHub, ajouter ces trois fichiers, puis activer GitHub Pages depuis la branche `main`.
+
+Le projet utilise uniquement des chemins relatifs ; il est compatible avec GitHub Pages sans configuration supplémentaire.
