@@ -93,14 +93,14 @@ button:focus-visible {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  height: 90px;
-  padding: 0 var(--gutter);
+  height: 104px;
+  padding: 0 clamp(1.5rem, 4.75vw, 5rem);
   border-bottom: 1px solid transparent;
   transition: background-color var(--transition-normal), border-color var(--transition-normal), height var(--transition-normal);
 }
 
 .site-header.scrolled {
-  height: 74px;
+  height: 86px;
   border-bottom-color: var(--apch-line);
   background: rgba(232, 220, 201, .92);
   backdrop-filter: blur(10px);
@@ -1356,11 +1356,13 @@ footer a:last-child {
   }
 
   .site-header {
-    height: 74px;
+    height: 88px;
+    padding-right: 24px;
+    padding-left: 24px;
   }
 
   .site-header.scrolled {
-    height: 66px;
+    height: 78px;
   }
 
   .site-header.scrolled .brand {
