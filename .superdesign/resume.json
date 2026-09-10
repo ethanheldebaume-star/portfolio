@@ -31,7 +31,7 @@
       "fingerprints": {
         ".superdesign/design-system.md": "b2dee545ad215bbe27ce8124f43872109138d5b0b97b1dececa609d0b47c0e54",
         "index.html": "1ef003c112a25e2843a20183a335075fb5223cbc07df56e0e4dbb914c2937ce5",
-        "style.css": "6ddb28f451f69b18b3e85bf8296004af03944ede223803eea2a980978e2138e9"
+        "style.css": "86a2632dd97570778b76fdd108e5408ed9f5bf2fc35639e406404f32a5a01f0d"
       },
       "components": [
         {
@@ -51,7 +51,7 @@
         "67abf217-08f4-40e7-b642-5c7999ab46da": {
           "title": "Accueil APCH Studio",
           "visualDirection": "reproduction fidèle de la direction actuelle",
-          "currentVersion": 14
+          "currentVersion": 15
         },
         "3fcbe8ca-e30a-4a9f-884f-b3910ae37bf1": {
           "title": "Direction 01 — Affiche vivante",
@@ -69,7 +69,7 @@
           "currentVersion": 3
         }
       },
-      "updatedAt": "2026-09-10T10:22:58Z"
+      "updatedAt": "2026-09-10T10:30:00Z"
     }
   }
 }
