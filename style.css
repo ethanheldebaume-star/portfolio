@@ -15,7 +15,8 @@
   --apch-black: #111510;
   --apch-muted: #526458;
   --apch-line: rgba(18, 50, 31, .2);
-  --font-display: "Climate Crisis", Georgia, serif;
+  --font-hero: "Climate Crisis", Georgia, serif;
+  --font-heading: "Montserrat", Arial, sans-serif;
   --font-body: "Montserrat", Arial, sans-serif;
   --radius-small: 14px;
   --radius-medium: 22px;
@@ -233,18 +234,21 @@ button:focus-visible {
   margin-top: 22px;
 }
 
-.hero h1,
 .section-heading h2,
 .about h2,
 .contact h2,
 .project-info h3 {
-  font-family: var(--font-display);
-  font-weight: 400;
-  letter-spacing: -.035em;
-  line-height: .95;
+  font-family: var(--font-heading);
+  font-weight: 900;
+  letter-spacing: -.065em;
+  line-height: .92;
 }
 
 .hero h1 {
+  font-family: var(--font-hero);
+  font-weight: 400;
+  letter-spacing: -.035em;
+  line-height: .95;
   max-width: 760px;
   margin-top: 20px;
   font-size: clamp(4rem, 6.5vw, 7.3rem);
@@ -359,8 +363,8 @@ button:focus-visible {
 .mock-nord-hero h4 {
   position: relative;
   z-index: 1;
-  font-family: var(--font-display);
-  font-weight: 400;
+  font-family: var(--font-heading);
+  font-weight: 800;
   letter-spacing: -.025em;
   line-height: .94;
 }
@@ -442,7 +446,7 @@ button:focus-visible {
 
 .section-heading h2 {
   max-width: 760px;
-  font-size: clamp(3.1rem, 5.6vw, 6.7rem);
+  font-size: clamp(2.75rem, 5vw, 6.1rem);
 }
 
 .section-heading > p:last-child {
@@ -598,7 +602,8 @@ button:focus-visible {
 
 .project-info h3 {
   margin-top: 18px;
-  font-size: clamp(3.15rem, 4.45vw, 5.55rem);
+  font-size: clamp(2.8rem, 3.7vw, 4.65rem);
+  font-weight: 800;
 }
 
 .project-info p:not(.project-index) {
@@ -877,15 +882,18 @@ button:focus-visible {
 
 .service-card > span {
   color: var(--apch-red);
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-size: clamp(2.3rem, 4vw, 4rem);
-  line-height: .85;
+  font-weight: 900;
+  letter-spacing: -.07em;
+  line-height: .82;
 }
 
 .service-card h3 {
+  font-family: var(--font-heading);
   font-size: clamp(2rem, 3.7vw, 4rem);
-  font-weight: 700;
-  letter-spacing: -.065em;
+  font-weight: 800;
+  letter-spacing: -.045em;
   line-height: .94;
   text-transform: uppercase;
 }
@@ -973,9 +981,11 @@ button:focus-visible {
   bottom: -40%;
   color: var(--apch-red);
   content: attr(data-step);
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-size: clamp(7rem, 15vw, 15rem);
-  line-height: .7;
+  font-weight: 900;
+  letter-spacing: -.08em;
+  line-height: .68;
   opacity: 0;
   transition: opacity var(--transition-normal), transform var(--transition-normal);
   transform: translateY(18px);
@@ -997,9 +1007,10 @@ button:focus-visible {
 }
 
 .process-item h3 {
+  font-family: var(--font-heading);
   font-size: clamp(2rem, 3.5vw, 3.9rem);
-  font-weight: 700;
-  letter-spacing: -.06em;
+  font-weight: 800;
+  letter-spacing: -.045em;
   line-height: .95;
   text-transform: uppercase;
 }
@@ -1042,7 +1053,7 @@ button:focus-visible {
 
 .about h2 {
   max-width: 850px;
-  font-size: clamp(3.4rem, 5.4vw, 6.5rem);
+  font-size: clamp(3rem, 5vw, 6.1rem);
 }
 
 .about-copy > p {
@@ -1054,11 +1065,11 @@ button:focus-visible {
 }
 
 .about-flower {
-  right: -1%;
+  left: -1%;
   bottom: -10%;
   width: clamp(120px, 14vw, 210px);
   opacity: .5;
-  transform: rotate(8deg);
+  transform: rotate(-8deg);
 }
 
 .contact {
@@ -1095,8 +1106,8 @@ button:focus-visible {
 .contact h2 {
   max-width: min(68%, 850px);
   margin-top: clamp(1.6rem, 3vw, 2.6rem);
-  font-size: clamp(3.5rem, 5vw, 6.5rem);
-  line-height: .99;
+  font-size: clamp(2.9rem, 4.7vw, 5.9rem);
+  line-height: .94;
 }
 
 .contact p:not(.eyebrow) {
@@ -1230,10 +1241,11 @@ footer a:last-child {
 
   .mobile-menu a {
     color: var(--apch-green);
-    font-family: var(--font-display);
+    font-family: var(--font-heading);
     font-size: clamp(2.7rem, 9vw, 5rem);
-    letter-spacing: -.04em;
-    line-height: .98;
+    font-weight: 800;
+    letter-spacing: -.06em;
+    line-height: .94;
   }
 
   .mobile-menu a:last-child {
@@ -1281,7 +1293,7 @@ footer a:last-child {
 
   .contact h2 {
     max-width: min(68%, 720px);
-    font-size: clamp(3.25rem, 6.8vw, 5.6rem);
+    font-size: clamp(2.8rem, 5.9vw, 5.25rem);
   }
 
   .contact-flower {
@@ -1291,6 +1303,10 @@ footer a:last-child {
   }
 
   .section-heading {
+    grid-template-columns: 1fr;
+  }
+
+  .projects .section-heading {
     grid-template-columns: 1fr;
   }
 
@@ -1450,8 +1466,8 @@ footer a:last-child {
   }
 
   .section-heading h2 {
-    font-size: clamp(2.8rem, 12.5vw, 4.2rem);
-    line-height: .98;
+    font-size: clamp(2.45rem, 11vw, 3.75rem);
+    line-height: .94;
   }
 
   .section-heading > p:last-child {
@@ -1495,7 +1511,7 @@ footer a:last-child {
 
   .project-info h3 {
     margin-top: 15px;
-    font-size: clamp(3rem, 13.2vw, 4.3rem);
+    font-size: clamp(2.55rem, 11.5vw, 3.65rem);
   }
 
   .project-info p:not(.project-index) {
@@ -1614,7 +1630,7 @@ footer a:last-child {
 
   .about h2 {
     font-size: clamp(2.2rem, 9.5vw, 3rem);
-    line-height: .98;
+    line-height: .94;
   }
 
   .about-copy > p {
@@ -1624,8 +1640,8 @@ footer a:last-child {
   }
 
   .about-flower {
-    right: -7%;
-    bottom: -8%;
+    left: -7%;
+    bottom: -18%;
     width: 120px;
   }
 
@@ -1643,8 +1659,8 @@ footer a:last-child {
   .contact h2 {
     max-width: 100%;
     margin-top: 24px;
-    font-size: clamp(3.1rem, 13vw, 4.5rem);
-    line-height: 1.01;
+    font-size: clamp(2.6rem, 11.5vw, 3.8rem);
+    line-height: .96;
   }
 
   .contact p:not(.eyebrow) {
